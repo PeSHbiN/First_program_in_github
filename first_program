@@ -1,0 +1,23 @@
+import java.util.Scanner;
+	public class first_program{
+		public static void main (String[]args){
+
+			Scanner aa = new Scanner(System.in);
+
+			System.out.println("how many letters your name ?");
+			int size = aa.nextInt();
+
+			char []array = new char [size];
+
+			System.out.println("write your name in letters ");
+			for (int i=0 ;i<array.length; i++){
+				char name = aa.next().charAt(0);
+				array [i] = name ;
+				}
+			System.out.print("your name is ");
+			for (int i=0 ; i<size ;i++){
+				System.out.print(array[i]);
+				}
+			System.out.println();
+			}
+	}
